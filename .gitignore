@@ -1,0 +1,4 @@
+backend_flask/uploads/
+backend_flask/venv/
+**/__pycache__
+**/.DS_Store
