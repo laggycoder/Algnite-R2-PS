@@ -1,0 +1,7 @@
+Flask
+Pillow
+# Add other libraries like numpy, scikit-learn if you do basic feature extraction
+# For more advanced AI:
+# tensorflow or torch
+# transformers
+# openai
