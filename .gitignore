@@ -1,4 +1,24 @@
-backend_flask/uploads/
-backend_flask/venv/
-**/__pycache__
-**/.DS_Store
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+backend_flask/venv/ # Specific to your structure
+# If you named your venv differently, adjust this
+
+# IDE / Editor specific
+.vscode/
+*.DS_Store
+
+# Secrets - VERY IMPORTANT
+.env
+backend_flask/.env # Specific to your structure
+secrets.json # If you ever use such a file
+*.pem
+*.key
+
+# Uploads (if you don't want to commit test uploads)
+uploads/
+backend_flask/uploads/ # Specific to your structure

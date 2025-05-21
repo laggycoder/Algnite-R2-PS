@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopSmarter AI Assistant</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <!-- Include Lucide Icons (or your preferred icon library) -->
-    <script src="https://unpkg.com/lucide-react@0.292.0/dist/umd/lucide-react.min.js"></script> 
-    <!-- Note: lucide-react.min.js is for React, for vanilla JS you might need to find a different way or use SVG strings -->
-    <!-- Better: Use an icon font or direct SVGs. For simplicity, we'll try to use JS to create them if possible or use text placeholders. -->
-    <!-- For a quick hackathon, you can embed SVGs or use unicode characters. -->
+    <!-- For icons, consider using a library like Feather Icons (SVG) or Font Awesome, or embed SVGs directly. -->
+    <!-- For simplicity, placeholders are used here. You'd replace <span> with <img> or <i> for actual icons. -->
 </head>
 <body>
     <div class="app-container">
         <header>
             <h1><span class="icon-placeholder">🤖</span> ShopSmarter AI Assistant</h1>
             <button id="darkModeToggle" class="dark-mode-toggle" title="Toggle Dark Mode">
-                <span class="icon-placeholder">🌙</span> <!-- Placeholder for Moon/Sun icon -->
+                <span id="darkModeIcon" class="icon-placeholder">🌙</span> <!-- JS will update this icon -->
             </button>
         </header>
 
@@ -30,8 +27,6 @@
                         <img id="imagePreview" src="#" alt="Image Preview" style="display:none;" class="image-preview"/>
                         <span id="imagePreviewPlaceholder">Preview your image here</span>
                     </div>
-                     <!-- Add a hidden input to store the current prompt for image upload -->
-                    <input type="hidden" id="currentPromptForImageUpload" value="">
                 </section>
 
                 <!-- Chat Input Section -->
@@ -54,6 +49,19 @@
                     </div>
                 </section>
             </div>
+
+            <!-- AI Insights Section -->
+            <section class="section" id="aiInsightsSection" style="display:none;">
+                <h2><span class="icon-placeholder">💡</span> AI Insights</h2>
+                <div>
+                    <strong>Image Description (OpenAI Vision):</strong>
+                    <p id="openaiDescriptionText" class="ai-insight-box">N/A</p>
+                </div>
+                <div style="margin-top: 15px;">
+                    <strong>Search Refinement (Gemini):</strong>
+                    <p id="geminiRefinementText" class="ai-insight-box">N/A</p>
+                </div>
+            </section>
 
             <!-- Recommendations Section -->
             <section class="section" id="recommendationsSection">
@@ -109,7 +117,6 @@
                 <div class="product-modal-content">
                     <div class="product-modal-image-section">
                         <img id="modalMainImage" src="#" alt="Product Image" class="main-image">
-                        <!-- Thumbnails if multiple images -->
                         <div id="modalThumbnails" class="product-modal-thumbnails"></div>
                     </div>
                     <div class="product-modal-details-section">
@@ -117,17 +124,17 @@
                         <p id="modalProductPrice" class="price">$0.00</p>
                         <p id="modalProductDescription" class="description">Description here...</p>
                         <div id="modalProductAttributes" class="attributes">
-                            <!-- Attributes like size, color -->
+                            <!-- Attributes like size, color, material -->
                         </div>
                         <div id="modalRecommendationReason" class="recommendation-reason" style="display:none;">
                             <strong>Why Recommended:</strong> <span id="modalReasonText"></span>
-                            <ul id="modalDetailedReasonsList" class="detailed-reasons-modal" style="list-style-type: disc; padding-left: 20px; margin-top: 5px;"></ul>
+                            <ul id="modalDetailedReasonsList" class="detailed-reasons-modal"></ul>
                         </div>
                         <div class="product-modal-actions">
                             <button id="modalToggleWishlistBtn" class="wishlist-btn">
                                 <span class="icon-placeholder-small">❤️</span> <span id="modalWishlistBtnText">Add to Wishlist</span>
                             </button>
-                            <button id="modalToggleCartBtn" class="add-to-cart-btn">
+                            <button id="modalToggleCartBtn" class="add-to-cart-btn"> <!-- Class will change dynamically -->
                                 <span class="icon-placeholder-small">➕</span> <span id="modalCartBtnText">Add to Cart</span>
                             </button>
                         </div>
@@ -143,7 +150,7 @@
 
     <script>
         // Pass initial recommendations from Flask to JavaScript
-        const initialRecommendationsFromServer = {{ initial_recommendations | safe }};
+        const initialRecommendationsFromServer = {{ initial_recommendations | safe if initial_recommendations else [] }};
     </script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>

@@ -1,7 +1,9 @@
 Flask
 Pillow
-# Add other libraries like numpy, scikit-learn if you do basic feature extraction
-# For more advanced AI:
-# tensorflow or torch
-# transformers
-# openai
+transformers
+torch
+scikit-learn
+openai
+google-generativeai
+python-dotenv # For loading .env file
+requests # Already used for image download, ensure it's listed
