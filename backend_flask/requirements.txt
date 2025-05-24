@@ -5,5 +5,8 @@ torch
 scikit-learn
 openai
 google-generativeai
-python-dotenv # For loading .env file
-requests # Already used for image download, ensure it's listed
+python-dotenv
+requests
+spacy
+# Consider adding a specific version for spacy's model if needed, e.g. en_core_web_sm==3.7.0
+# but usually `python -m spacy download en_core_web_sm` handles it.
