@@ -8,5 +8,5 @@ google-generativeai
 python-dotenv
 requests
 spacy
-# Consider adding a specific version for spacy's model if needed, e.g. en_core_web_sm==3.7.0
-# but usually `python -m spacy download en_core_web_sm` handles it.
+beautifulsoup4 # If you used the scraper
+# Werkzeug (usually a Flask dependency, but good to list if specific version needed)

@@ -2,23 +2,55 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.egg-info/
+dist/
+build/
+*.so
+*. τότε
 
 # Virtual environment
 venv/
-backend_flask/venv/ # Specific to your structure
-# If you named your venv differently, adjust this
+backend_flask/venv/
+# If your venv is named differently or located elsewhere, adjust
 
 # IDE / Editor specific
 .vscode/
+.idea/
 *.DS_Store
+*.suo
+*.user
+*.sln.docstates
 
 # Secrets - VERY IMPORTANT
 .env
-backend_flask/.env # Specific to your structure
-secrets.json # If you ever use such a file
+backend_flask/.env
+secrets.json
 *.pem
 *.key
+credentials.json # Common for Google Cloud
 
-# Uploads (if you don't want to commit test uploads)
+# Uploads by users (temporary)
 uploads/
-backend_flask/uploads/ # Specific to your structure
+backend_flask/uploads/
+
+# Raw Downloaded Kaggle Dataset (large, should not be committed)
+kaggle_dataset_raw/
+
+# spaCy models if downloaded into project (though typically they go to user space)
+# Adjust if you download them to a specific project subfolder you don't want to commit
+# en_core_web_sm/
+
+# Log files
+*.log
+logs/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IPython Notebook Checkpoints
+.ipynb_checkpoints
+
+# Precomputed embeddings file (if you implement saving them from product_catalog.py)
+backend_flask/precomputed_ai_catalog.pkl
