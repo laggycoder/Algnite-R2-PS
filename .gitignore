@@ -5,52 +5,39 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-*.so
-*. τότε
 
 # Virtual environment
 venv/
 backend_flask/venv/
-# If your venv is named differently or located elsewhere, adjust
+
+# Secrets - VERY IMPORTANT
+.env
+backend_flask/.env
+
+# Database file
+backend_flask/shopsmarter.sqlite3
+*.sqlite
+*.sqlite3
+*.db
+
+# User Uploads (temporary)
+uploads/
+backend_flask/uploads/
+
+# Raw Downloaded Kaggle Dataset
+kaggle_dataset_raw/
+
+# spaCy models downloaded locally (if not in venv's site-packages)
+# en_core_web_sm*/
 
 # IDE / Editor specific
 .vscode/
 .idea/
 *.DS_Store
-*.suo
-*.user
-*.sln.docstates
-
-# Secrets - VERY IMPORTANT
-.env
-backend_flask/.env
-secrets.json
-*.pem
-*.key
-credentials.json # Common for Google Cloud
-
-# Uploads by users (temporary)
-uploads/
-backend_flask/uploads/
-
-# Raw Downloaded Kaggle Dataset (large, should not be committed)
-kaggle_dataset_raw/
-
-# spaCy models if downloaded into project (though typically they go to user space)
-# Adjust if you download them to a specific project subfolder you don't want to commit
-# en_core_web_sm/
 
 # Log files
 *.log
 logs/
 
-# OS generated files
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# IPython Notebook Checkpoints
-.ipynb_checkpoints
-
-# Precomputed embeddings file (if you implement saving them from product_catalog.py)
-backend_flask/precomputed_ai_catalog.pkl
+# Optional: Precomputed embeddings if you cache them
+# backend_flask/precomputed_ai_catalog.pkl

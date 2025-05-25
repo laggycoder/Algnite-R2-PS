@@ -1,12 +1,16 @@
 Flask
+Flask-Bcrypt
+Flask-Login
+python-dotenv
 Pillow
 transformers
 torch
 scikit-learn
 openai
 google-generativeai
-python-dotenv
 requests
 spacy
-beautifulsoup4 # If you used the scraper
-# Werkzeug (usually a Flask dependency, but good to list if specific version needed)
+numpy
+pandas
+tqdm
+# Werkzeug, Jinja2, itsdangerous, click (Flask dependencies)
