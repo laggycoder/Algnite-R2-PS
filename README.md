@@ -20,7 +20,6 @@ This
 ### Updated, curated catalog using ViT embeddings.
     *   **AI Image Description:** Get detailed descriptions (apparel, style `README.md`
 
-```markdown
 # ShopSmarter: AI-Powered Personal Shopping Assistant
 
 ShopS, color, material, etc.) of uploaded images via OpenAI GPT-4o Vision.
@@ -266,3 +265,8 @@ KEY="your_openai_api_key_here"
 5. with the described features.
 *   **Language:** Python (Flask) for backend, HTML/CSS/JS for frontend.
 *   (Presentation and Demo Video to be created separately).
+
+For demo, please contact one of these numbers: 
+Ishan - 9769752596
+Hafiz - 9539790357
+Dipayan - 8928315649
