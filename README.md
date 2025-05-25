@@ -94,6 +94,7 @@ ViT) (e.g., `google/vit-base-patch16-224-in    *   Processing Script: `prepare_d
 *   **Data Preparationvenv`, `python-dotenv` for API key management.
 
 ## Project Structure (Key Components)
+```plaintext
 Algnite- models.py                   # User class for SQLite and Flask-Login
 │   ├── schema.sql                  # SQL schema for SQLite database
 │   ├── ai_core/                    # AI specific logic modules
@@ -134,6 +135,7 @@ Algnite- models.py                   # User class for SQLite and Flask-Login
 │   ├── curated_product_catalog.json # Your product metadatagle data
 ├── .gitignore
 └── README.md
+```
 
 ## Setup and Installation
 
