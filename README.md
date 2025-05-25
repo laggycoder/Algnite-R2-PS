@@ -1,6 +1,8 @@
 # ShopSmarter: AI-Powered Personal Shopping Assistant
 
-ShopS, color, material, etc.) of uploaded images via OpenAI GPT-4o Vision.
+ShopSmarter is an advanced, full-featured AI personal shopping assistant prototype. It allows users to discover products through visual search (image upload) or natural language text prompts. The system leverages Vision Transformer (ViT) for visual similarity against a curated product catalog, OpenAI's GPT-4o for rich image descriptions, spaCy for NLP-enhanced query understanding, and Google's Gemini for contextual search refinement and suggestions, including the SQLite database, full user authentication, persistent user data, and the refined AI functionalities.
+
+Dissects uploaded images via OpenAI GPT-4o Vision.
     *   **NLP-Enhanced Textmarter is an advanced AI-powered personal shopping assistant designed to revolutionize the e-commerce experience. Users can upload images Prompts:** spaCy extracts key entities and terms from user text prompts for better search context.
     *   **LLM of items they like or use text prompts for discovery. The assistant leverages a suite of AI models: Vision Transformer (Vi-Powered Query Enhancement:** Google Gemini analyzes image descriptions, user prompts, and spaCy outputs to refine search queries, suggestT) for visual similarity against a curated product catalog, OpenAI's GPT-4o for rich image descriptions, spa key attributes, and even propose complementary item categories.
 *   **Intelligent & Personalized Recommendations:**
@@ -246,7 +248,7 @@ KEY="your_openai_api_key_here"
 *   **Language:** Python (Flask) for backend, HTML/CSS/JS for frontend.
 *   (Presentation and Demo Video to be created separately).
 
-For demo, please contact one of these numbers: 
-Ishan - 9769752596
-Hafiz - 9539790357
+For demo, please contact one of these numbers: \\
+Ishan - 9769752596 \\
+Hafiz - 9539790357 \\
 Dipayan - 8928315649
