@@ -248,7 +248,7 @@ KEY="your_openai_api_key_here"
 *   **Language:** Python (Flask) for backend, HTML/CSS/JS for frontend.
 *   (Presentation and Demo Video to be created separately).
 
-For demo, please contact one of these numbers: \\
-Ishan - 9769752596 \\
-Hafiz - 9539790357 \\
-Dipayan - 8928315649
+For demo, please contact one of these numbers:  
+Ishan - 9769752596  
+Hafiz - 9539790357  
+Dipayan - 8928315649  
