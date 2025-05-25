@@ -1,27 +1,5 @@
 # ShopSmarter: AI-Powered Personal Shopping Assistant
 
-ShopSmarter is an advanced, full-featured AI personal shopping assistant prototype. It allows users to discover products through visual search (image upload) or natural language text prompts. The system leverages aOkay, here suite of AI models: Vision Transformer (ViT) for visual similarity against a curated product catalog, OpenAI's GPT-'s an updated `README.md` that reflects the latest state of your project4o for rich image descriptions, spaCy for NLP-enhanced query understanding, and Google's Gemini for contextual search refinement and suggestions, including the SQLite database, full user authentication, persistent user data, and the refined AI functionalities.
-
-This README assumes:. User accounts, persistent wishlists, carts, and basic preference learning are implemented using a local SQLite database.
-
-This
-*   You are using SQLite.
-*   User authentication, wishlists, carts, and basic preferences are implemented project is developed for the Hackathon (Theme 1).
-
-## Core Features
-
-*   **Multi-Modal Input & AI.
-*   The Kaggle dataset is processed by `prepare_dataset.py` into a local curated catalog.
-* Understanding:**
-    *   **Image-based Search:** Upload an image to find visually similar products from a locally stored   All AI components (ViT, OpenAI Vision, spaCy, Gemini) are integrated.
-
----
-
-### Updated, curated catalog using ViT embeddings.
-    *   **AI Image Description:** Get detailed descriptions (apparel, style `README.md`
-
-# ShopSmarter: AI-Powered Personal Shopping Assistant
-
 ShopS, color, material, etc.) of uploaded images via OpenAI GPT-4o Vision.
     *   **NLP-Enhanced Textmarter is an advanced AI-powered personal shopping assistant designed to revolutionize the e-commerce experience. Users can upload images Prompts:** spaCy extracts key entities and terms from user text prompts for better search context.
     *   **LLM of items they like or use text prompts for discovery. The assistant leverages a suite of AI models: Vision Transformer (Vi-Powered Query Enhancement:** Google Gemini analyzes image descriptions, user prompts, and spaCy outputs to refine search queries, suggestT) for visual similarity against a curated product catalog, OpenAI's GPT-4o for rich image descriptions, spa key attributes, and even propose complementary item categories.
